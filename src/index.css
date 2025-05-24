@@ -43,7 +43,7 @@ body{
 
 .contentContainer{
   padding: 10px;
-  height: 590px;
+  /* height: 590px; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -53,6 +53,8 @@ body{
   height: 300px;
   border: 2px solid black;
   padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -66,4 +68,24 @@ body{
 .cardBody img{
   width:100%;
   height: 45%;
+}
+
+.filter{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 6px  ;
+}
+
+
+.shimmerConatiner{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmerElement{
+  width: 220px;
+  height: 320px;
+  /* background-color: #757575; */
+  background-color: #f0f0f0;
+  margin: 20px;
 }

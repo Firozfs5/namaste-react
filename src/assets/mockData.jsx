@@ -1,10 +1,10 @@
-export const restaurantData = {
+export const resData = {
     restaurants: [
       {
         id: 1,
         name: "Tandoori Palace",
         cuisine: "Indian",
-        rating: 4.5,
+        rating: 3.5,
         location: "Bangalore",
         isOpen: true,
         imageUrl: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
@@ -22,7 +22,7 @@ export const restaurantData = {
         id: 3,
         name: "Dragon Bowl",
         cuisine: "Chinese",
-        rating: 4.7,
+        rating: 3.7,
         location: "Mumbai",
         isOpen: true,
         imageUrl: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
@@ -49,7 +49,7 @@ export const restaurantData = {
         id: 6,
         name: "Sushi Zen",
         cuisine: "Japanese",
-        rating: 4.8,
+        rating: 2.8,
         location: "Kolkata",
         isOpen: true,
         imageUrl: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
@@ -76,7 +76,7 @@ export const restaurantData = {
         id: 9,
         name: "Green Bowl",
         cuisine: "Vegan",
-        rating: 4.0,
+        rating: 3.0,
         location: "Jaipur",
         isOpen: false,
         imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
@@ -94,7 +94,7 @@ export const restaurantData = {
         id: 11,
         name: "Kebab Kingdom",
         cuisine: "Middle Eastern",
-        rating: 4.7,
+        rating: 3.7,
         location: "Bhopal",
         isOpen: true,
         imageUrl: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
@@ -130,7 +130,7 @@ export const restaurantData = {
         id: 15,
         name: "The Breakfast Club",
         cuisine: "Continental",
-        rating: 4.5,
+        rating: 2.5,
         location: "Coimbatore",
         isOpen: true,
         imageUrl: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
