@@ -7,9 +7,9 @@ export let Navbar=()=>{
   let [log,setLog]=useState('Login');
 
   useEffect(()=>{
-    console.log("hi im rendered")
+    // console.log("hi im rendered")
   },[])
-    console.log("hiii")
+    // console.log("hiii")
 
   function changeLog(){
      setLog(log=="Login"?"LogOut":'Login');
