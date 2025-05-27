@@ -1,15 +1,12 @@
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 import logoImage from '../assets/companylogo.png';
 import {Link} from 'react-router-dom'
+import useOnlineChecker from '../utils/useOnlineChecker';
 
 export let Navbar=()=>{
   
   let [log,setLog]=useState('Login');
-
-  useEffect(()=>{
-    // console.log("hi im rendered")
-  },[])
-    // console.log("hiii")
+  let online=useOnlineChecker();
 
   function changeLog(){
      setLog(log=="Login"?"LogOut":'Login');
@@ -19,6 +16,7 @@ export let Navbar=()=>{
   <div className='navbar'>
     <img className='logoImage' src={logoImage}></img>
     <div className='menueContainer'>
+      <div>Online status :{(online?"🟢":"🔴")}</div>
       <div className="simple-menue-btn"><Link to="/">Home</Link></div>
       <div className="simple-menue-btn"><Link to='/about'>About Us</Link></div>
       <div className="simple-menue-btn"><Link to="/Contact">Contact Us</Link></div>

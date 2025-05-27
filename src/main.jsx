@@ -1,15 +1,15 @@
-
+import {lazy,Suspense} from "react";
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import Navbar from './components/Navbar';
 import Body from "./components/Body"
 import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
-import About from './components/about'
 import Contact from './components/contact';
 import Error from './components/errorShow';
 import CardDisplay from './components/foodDisplaying'
+import Shimmer from "./components/shimmer";
 
-
+const About=lazy(()=> import('./components/about'))
 
 let AppLayout=()=>{
 
@@ -32,7 +32,7 @@ let appRouter=createBrowserRouter([
       ,
       {
     path:'/About',
-    element:<About />,
+    element:<Suspense fallback={<Shimmer />}><About /></Suspense>,
     errorElement:<Error />
      },
      {
