@@ -16,7 +16,7 @@ const useRestaurantFetcher=()=>{
       setRestaurantData(json?.recipes);
     }
 
-        function abovethen5(){
+    function abovethen5(){
        let data=restaurantData
        let filteredArray=data.filter((item)=> (item.rating)>=4.4)
        console.log(filteredArray)
@@ -24,8 +24,7 @@ const useRestaurantFetcher=()=>{
     }
 
     function lessThan5(){
-      let data=restaurantData
-      //  console.log(data)
+       let data=restaurantData
        let filteredArray=data.filter((item)=> (item.rating)<4.3)
        console.log(filteredArray)
        setRestaurantData(filteredArray);
